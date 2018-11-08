@@ -30,7 +30,7 @@ public class DoccloudwebApplication {
         // 创建一个RPC builder
         RPC.Builder builder = new RPC.Builder(new Configuration());
 
-        //指定RPC Server的参数
+        //指定RPC Server的参数，对于服务端
         builder.setBindAddress("localhost");
         builder.setPort(8877);
 
