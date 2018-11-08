@@ -13,7 +13,7 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import javax.servlet.MultipartConfigElement;
 import java.io.IOException;
-
+//放在外面，客户端
 @SpringBootApplication
 public class DoccloudwebApplication {
 
