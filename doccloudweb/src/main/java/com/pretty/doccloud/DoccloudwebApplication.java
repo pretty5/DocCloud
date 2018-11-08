@@ -25,7 +25,7 @@ public class DoccloudwebApplication {
 
     private static void startDocJobCallBack() throws IOException {
         //DocJobCallbackImpl instance = new DocJobCallbackImpl();
-        //从容器外部获取容器内部的bean
+        //从容器外部获取容器内部的bean,避免找不到
         DocJobCallbackImpl instance = SpringUtil.getApplicationContext().getBean(DocJobCallbackImpl.class);
         // 创建一个RPC builder
         RPC.Builder builder = new RPC.Builder(new Configuration());
